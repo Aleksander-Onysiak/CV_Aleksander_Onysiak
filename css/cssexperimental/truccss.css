@@ -1,0 +1,247 @@
+<style data-href="/styles.139209cab78603e6293e.css" data-identity="gatsby-global-css">
+                                                                                     * {
+                                                                                         -webkit-font-smoothing: antialiased
+                                                                                     }
+
+@font-face {
+    font-family: Nunito;
+    src: url(/static/Nunito-Regular-e4eb7682710458841b1080acceacd501.ttf) format("truetype")
+}
+
+body {
+    font-family: Nunito, "Sans-serif"
+}
+
+#gatsby-focus-wrapper {
+    padding-top: 85px
+}
+
+@media screen and (max-width:1024px) {
+    #gatsby-focus-wrapper {
+        padding-top: 0
+    }
+}
+
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+q,
+ruby,
+s,
+samp,
+section,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video {
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block
+}
+
+blockquote,
+q {
+    quotes: none
+}
+
+blockquote:after,
+blockquote:before,
+q:after,
+q:before {
+    content: "";
+    content: none
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+a {
+    text-decoration: none
+}
+
+strong {
+    font-weight: 700
+}
+
+em {
+    font-style: italic
+}
+
+@font-face {
+    font-display: swap;
+    font-family: NunitoVariable;
+    font-style: normal;
+    font-weight: 200 1000;
+    src: url(/static/nunito-cyrillic-variable-wghtOnly-normal-ab3faa41df1758ee5b885e68dffad942.woff2) format("woff2");
+    unicode-range: u+0301, u+0400-045f, u+0490-0491, u+04b0-04b1, u+2116
+}
+
+@font-face {
+    font-display: swap;
+    font-family: NunitoVariable;
+    font-style: normal;
+    font-weight: 200 1000;
+    src: url(/static/nunito-cyrillic-ext-variable-wghtOnly-normal-c18a3502d6473272bdc39e042396ecae.woff2) format("woff2");
+    unicode-range: u+0460-052f, u+1c80-1c88, u+20b4, u+2de0-2dff, u+a640-a69f, u+fe2e-fe2f
+}
+
+@font-face {
+    font-display: swap;
+    font-family: NunitoVariable;
+    font-style: normal;
+    font-weight: 200 1000;
+    src: url(/static/nunito-latin-variable-wghtOnly-normal-07adf0b2f5cb89c62ba7708dd93e0353.woff2) format("woff2");
+    unicode-range: u+00??, u+0131, u+0152-0153, u+02bb-02bc, u+02c6, u+02da, u+02dc, u+2000-206f, u+2074, u+20ac, u+2122, u+2191, u+2193, u+2212, u+2215, u+feff, u+fffd
+}
+
+@font-face {
+    font-display: swap;
+    font-family: NunitoVariable;
+    font-style: normal;
+    font-weight: 200 1000;
+    src: url(/static/nunito-latin-ext-variable-wghtOnly-normal-b2120f41c4a82a27722946c3ff829e5a.woff2) format("woff2");
+    unicode-range: u+0100-024f, u+0259, u+1e??, u+2020, u+20a0-20ab, u+20ad-20cf, u+2113, u+2c60-2c7f, u+a720-a7ff
+}
+
+@font-face {
+    font-display: swap;
+    font-family: NunitoVariable;
+    font-style: normal;
+    font-weight: 200 1000;
+    src: url(/static/nunito-vietnamese-variable-wghtOnly-normal-864aa311404227008faea6469d967e2b.woff2) format("woff2");
+    unicode-range: u+0102-0103, u+0110-0111, u+0128-0129, u+0168-0169, u+01a0-01a1, u+01af-01b0, u+1ea0-1ef9, u+20ab
+}
+</style>
+<style>
+ .gatsby-image-wrapper {
+     position: relative;
+     overflow: hidden
+ }
+
+.gatsby-image-wrapper picture.object-fit-polyfill {
+    position: static !important
+}
+
+.gatsby-image-wrapper img {
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    margin: 0;
+    max-width: none;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    object-fit: cover
+}
+
+.gatsby-image-wrapper [data-main-image] {
+    opacity: 0;
+    transform: translateZ(0);
+    transition: opacity .25s linear;
+    will-change: opacity
+}
+
+.gatsby-image-wrapper-constrained {
+    display: inline-block;
+    vertical-align: top
+}
+</style><noscript>
+<style>
+ .gatsby-image-wrapper noscript [data-main-image] {
+     opacity: 1 !important
+ }
+
+.gatsby-image-wrapper [data-placeholder-image] {
+    opacity: 0 !important
+}
+</style>
