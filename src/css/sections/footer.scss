@@ -1,0 +1,93 @@
+@import "../reset";
+@import "../visuals/fonts.scss";
+
+footer {
+  font-family: 'customfont', sans-serif;
+  font-size: 16px;
+}
+
+.footer {
+  margin-top: 50px;
+  background-color: #fff;
+  padding: 20px;
+  border-top: 2px solid #ccc;
+  display: flex;
+  flex-direction: column;
+
+  &__div {
+    font-size: 16px;
+    padding: 2em 0;
+    max-width: 20em;
+
+    &__title {
+      font-family: 'customfont', sans-serif;
+      font-size: 24px;
+      color: $color-blue;
+      font-weight: 900;
+    }
+
+    &__p {
+      white-space: pre-line;
+      padding: 1.5em 0 0 0;
+      max-width: 30em;
+      font-weight: 100;
+      color: dimgrey;
+      font-size: 0.8em;
+    }
+  }
+
+  &__section {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  &-span {
+    font-family: 'customfont', sans-serif;
+    font-weight: bold;
+    padding: 2em 0;
+  }
+
+  &-menu {
+
+    &__sublist {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+
+      &__title {
+        font-weight: 900;
+        margin-top: 2em;
+        margin-bottom: 2em;
+      }
+
+      &-item {
+        font-family: 'customfont', sans-serif;
+        padding: 0.5em 10em 0.5em 0;
+        font-weight: 100;
+        color: dimgrey;
+        font-size: 0.8em;
+
+        &:first-child {
+          margin-top: 2em;
+        }
+
+        &:last-child {
+          margin-bottom: 2em;
+        }
+
+        &__content {
+          text-decoration: none;
+          color: slategrey;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+
+  -menu__sub-item {
+    &:hover {
+      font-weight: bold;
+
+    }
+  }
+}

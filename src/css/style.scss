@@ -1,0 +1,38 @@
+@import "reset";
+@import "visuals/colors";
+@import 'sections/footer';
+@import 'sections/reviews';
+@import 'sections/hobbies';
+@import 'sections/organizations';
+@import 'sections/languages';
+@import 'visuals/buttons';
+@import 'visuals/titles';
+@import 'sections/schools';
+@import 'visuals/menu';
+@import 'sections/projects';
+@import 'divs/divs';
+@import "visuals/fonts.scss";
+
+
+$ARB : 'myfont', sans-serif;
+
+
+
+html {
+  font-size: 16px;
+}
+
+.cv {
+  color: $color-blue;
+  background-color: white;
+  font-family: $ARB;
+  font-size: 1.5em;
+  font-weight: bolder;
+  padding: 0.7em 0 0.5em 1em;
+  border-bottom: lightgrey solid 1px;
+}
+/*
+####################
+DIVS
+####################
+ */

@@ -1,0 +1,63 @@
+@import "colors";
+@import "../visuals/fonts.scss";
+
+.prev,
+.next {
+  font-family: 'customfont', sans-serif;
+  position: absolute;
+  text-decoration: none;
+  top: 10em;
+  padding: 10px;
+  border: black 1px;
+  background-color: transparent;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 50px;
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+
+.prev_B,
+.next_B {
+  font-family: 'customfont', sans-serif;
+  position: absolute;
+  color: $color-blue;
+  top: 11em;
+  border: solid black 1px;
+  background-color: white;
+  font-size: 2em;
+  padding: 0.3em 0.6em;
+  cursor: pointer;
+  border-radius: 50px;
+}
+
+.prev_B {
+  left: 0.1em;
+}
+
+.next_B {
+  right: 0.1em;
+}
+.text__contact{
+  &__btn {
+    border-color: white;
+    font-size: 0.8em;
+    font-weight: bolder;
+    color: white;
+    min-height: 3em;
+    min-width: 3em;
+    background-color: $color-blue;
+    border-radius: 25px;
+    margin-left: auto;
+    margin-top: 1em;
+    margin-bottom:1em;
+    padding-left: 3em;
+    padding-right: 3em;
+  }
+}

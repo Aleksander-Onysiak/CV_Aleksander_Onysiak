@@ -1,0 +1,51 @@
+@import "../visuals/colors";
+@import "../visuals/fonts.scss";
+
+.img{
+  &_reviews{
+
+  }
+}
+.reviews {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  font-size: 14px;
+
+  &__title {
+
+  }
+  &__container{
+    flex-direction: row;
+  }
+
+  &__item {
+    &__container{
+      margin-left: 2.8125em;
+      margin-right: 2.8125em;
+      border-bottom: solid 1px #00008B;
+      width: 20.371em;
+      height: 10.035em;
+      overflow: auto;
+      white-space: normal;
+    }
+    &__title{
+      font-family: 'customfont', sans-serif;
+      font-size: 1em;
+      margin-bottom: 3em;
+    }
+    &__name{
+      font-family: 'customfont', sans-serif;
+      font-size: 1em;
+      color: $color-dark-blue;
+      font-weight: bold;
+      margin-bottom: 1em;
+    }
+    &__description{
+      margin-bottom: 2em
+    }
+    &__img{
+display: none;
+    }
+  }
+}

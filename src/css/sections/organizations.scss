@@ -1,0 +1,122 @@
+@import "../visuals/colors";
+@import "../visuals/fonts.scss";
+
+#btn1, #btn2, #btn3, #btn4 {
+  font-family: 'myfont', sans-serif;
+  font-size: 2em;
+  height: 2em;
+  width: 11em;
+  padding: 0.5em 1.5em 0.5em 2em;
+  background-color: white;
+}
+
+.organization {
+  display: none;
+}
+
+#organizations #btn1:focus ~ #iph,
+#organizations #btn2:focus ~ #hech,
+#organizations #btn3:focus ~ #helmo,
+#organizations #btn4:focus ~ #hepl,
+#organizations #btn1:checked ~ #iph,
+#organizations #btn2:checked ~ #hech,
+#organizations #btn3:checked ~ #helmo,
+#organizations #btn4:checked ~ #hepl {
+  display: block;
+  background-color: white;
+}
+
+#btn1:hover, #btn3:hover {
+  color: $color-yellow;
+  background-color: rgba(255, 184, 0, 0.05);
+}
+
+#btn1:checked, #btn3:checked {
+  color: $color-yellow;
+  background-color: rgba(255, 184, 0, 0.05);
+}
+
+#btn2:hover, #btn4:hover {
+  color: $color-purple;
+  background-color: rgba(130, 88, 243, 0.05);
+}
+
+.card1, .card3 {
+  color: $color-yellow;
+}
+
+.card2, .card4 {
+  color: $color-purple;
+}
+
+lucide {
+  &-circle {
+
+  }
+
+  &-checked {
+
+  }
+}
+
+.soft-skills-card {
+  font-family: 'customfont', sans-serif;
+  margin: 3em;
+  font-size: 0.875em;
+
+  &__list {
+
+  }
+
+  &__item {
+    margin-top: 1em;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+  }
+
+  &__content {
+    color: black;
+  }
+
+  /*&__img {
+    position: relative;
+    bottom: 10em;
+    left: 15em;
+    width: 10em;
+    height: 5em;
+  }*/
+}
+
+.organizations {
+  &__container {
+    &-btn {
+      font-family: 'customfont', sans-serif;
+      font-size: 1.5em;
+      font-weight: bold;
+      padding: 0.9em 4em;
+      cursor: pointer;
+      border: none;
+
+      &--active {
+        #btn1, #btn3 {
+          color: $color-yellow;
+          background-color: rgba(255, 184, 0, 0.05);
+        }
+
+        #btn2, #btn4 {
+          color: $color-purple;
+          background-color: rgba(130, 88, 243, 0.05);
+        }
+      }
+
+      &-span {
+        font-weight: bold;
+      }
+
+      &:active {
+
+      }
+    }
+  }
+}

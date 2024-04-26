@@ -1,0 +1,62 @@
+@import "../visuals/colors";
+
+.portfolio_link {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-size: 1em;
+  background: linear-gradient(to left, #00008B, #0000FF);
+  padding: 0.5em 0.4em 0.5em 0.8em;
+
+  &__p {
+    font-size: 0.8em;
+    color: white;
+    padding: 0.2em;
+  }
+
+}
+
+
+.form {
+  flex-direction: row;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 1em;
+  background: linear-gradient(rgb(255, 211, 146) 0%, rgb(255, 181, 34) 100%);
+  padding: 0.5em;
+
+  &__label {
+    font-size: 0.95em;
+    min-width: 2em;
+    margin-right: 1.5em;
+    padding: 0.2em;
+  }
+
+  &__input {
+    font-size: 1.2em;
+    width: 12em;
+    height: 1.5em;
+    padding: 0.2em;
+  }
+
+}
+
+.text__contact {
+  font-family: 'myfont', sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
+
+  &__p1 {
+    color: $color-dark-blue;
+    font-size: 42px;
+    padding: 1em 1em;
+    line-height: 1.5em;
+  }
+
+  &__p2 {
+    color: rgb(101, 102, 134);
+    font-size: 24px;
+    font-weight: lighter;
+  }
+}

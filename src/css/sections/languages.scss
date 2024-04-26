@@ -1,0 +1,39 @@
+@import "../visuals/colors";
+.languages {
+  position: relative;
+  overflow: hidden;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    width: 25em;
+    height: 15em;
+    margin-right: 10px;
+
+  }
+  &__item{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    width: 25em;
+    height: 15em;
+    margin-right: 10px;
+  }
+
+  &__title {
+    font-size: 2em;
+    padding: 3em 2em;
+    text-align: center;
+
+    &_master {
+      font-size: 4.5em;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+@import "../visuals/fonts.scss";
+
+.projects, .schools, .education, .organizations{
+  &__title {
+    font-family: 'myfont', sans-serif;
+    font-size: 2.625em;
+    padding: 2em 1.5em;
+    text-align: center;
+  }
+  &__container{
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+.reviews {
+  &__title {
+    font-size: 1.714em;
+    padding: 2em 1.5em;
+    text-align: center;
+  }
+
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

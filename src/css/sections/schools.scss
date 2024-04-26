@@ -1,0 +1,81 @@
+@import "../visuals/colors";
+@import "../visuals/fonts.scss";
+
+#btn5, #btn6, #btn7, #btn8 {
+  font-family: 'customfont', sans-serif;
+  font-size: 2em;
+  height: 2em;
+  width: 11em;
+  padding: 0.5em 1.5em 0.5em 2em;
+  background-color: white;
+}
+
+#schools #btn5:focus ~ #iph2,
+#schools #btn6:focus ~ #hech2,
+#schools #btn7:focus ~ #helmo2,
+#schools #btn8:focus ~ #hepl2,
+#schools #btn5:checked ~ #iph2,
+#schools #btn6:checked ~ #hech2,
+#schools #btn7:checked ~ #helmo2,
+#schools #btn8:checked ~ #hepl2 {
+  display: block;
+  background-color: white;
+}
+
+.school {
+  font-size: 16px;
+
+  &-card {
+    font-family: 'customfont', sans-serif;
+    padding: 1.2em;
+    background-color: #E6EFFA;
+    border-radius: 5%;
+    margin: 0 3em;
+    width: 15em;
+    height: 16em;
+    font-size: 1em;
+
+    &__title {
+      font-size: 1.3125em;
+      font-weight: bolder;
+    }
+
+    &__item {
+      &__content {
+        padding: 0.2em 0.5em;
+        color: lightslategrey;
+        font-size: 1em;
+
+        &__formation {
+          color: $color-blue;
+        }
+
+        & strong {
+          color: $color-dark-blue;
+        }
+
+        & svg {
+          padding-right: 0.5em;
+          color: $color-yellow;
+        }
+      }
+    }
+  }
+}
+
+.schools {
+  font-size: 16px;
+
+  &-card {
+    &__container {
+      &-btn {
+        font-family: 'customfont', sans-serif;
+        font-size: 1.5em;
+        font-weight: bold;
+        padding: 0.9em 4em;
+        cursor: pointer;
+        border: none;
+      }
+    }
+  }
+}

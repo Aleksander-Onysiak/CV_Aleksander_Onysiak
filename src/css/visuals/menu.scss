@@ -1,0 +1,43 @@
+@import "colors";
+@import "../visuals/fonts.scss";
+
+.sr-only {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.menu {
+  font-family: 'myfont', sans-serif;
+  font-size: 14px;
+
+  &__list {
+  }
+
+  &__item {
+    color: $color-dark-blue;
+    padding: 0.9375em 3em;
+    font-weight: bold;
+
+    &:hover {
+      color: $color-blue;
+      font-weight: bold;
+    }
+  }
+
+  &__dropdown {
+    &-item {
+      font-family: 'customfont', sans-serif;
+      color: $color-dark-blue;
+      padding: 0.9375em 1.5em;
+
+      &__content {
+        text-decoration: none;
+      }
+    }
+  }
+
+}
