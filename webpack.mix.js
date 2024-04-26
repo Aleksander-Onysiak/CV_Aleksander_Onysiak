@@ -19,6 +19,6 @@ mix.js('src/js/main.js', 'dist/js/main.js')
     })
     .webpackConfig({
         devServer: {
-            port: '8090'
+            port: '5173'
         }
     });

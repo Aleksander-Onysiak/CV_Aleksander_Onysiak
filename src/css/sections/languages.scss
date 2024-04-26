@@ -9,10 +9,8 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    border: 1px solid black;
-    width: 25em;
+    width: 16em;
     height: 15em;
-    margin-right: 10px;
 
   }
   &__item{
@@ -24,7 +22,8 @@
     border: 1px solid black;
     width: 25em;
     height: 15em;
-    margin-right: 10px;
+    margin-right: 0.5em;
+    margin-left: 0.5em;
   }
 
   &__title {
@@ -34,6 +33,11 @@
 
     &_master {
       font-size: 4.5em;
+      padding-bottom: 0.2em;
+      color:$color-blue;
+    }
+    &_description{
+      font-size: 1.5em;
     }
   }
 }

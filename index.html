@@ -139,30 +139,61 @@
                 </picture>
             </div>
         </div>
+        <div class="hobbies">
+            <div class="hobbies__item">
+                <p class="hobbies__title">Jeux Vidéos</p>
+                <p class="hobbies__title">Jeux de Société </p>
+                <picture>
+                    <source class="hobbies__source" type="image" srcset="">
+                    <source class="" srcset="">
+                    <image></image>
+                </picture>
+            </div>
+        </div>
+        <div class="hobbies">
+            <div class="hobbies__item">
+                <p class="hobbies__title">Tourisme</p>
+                <picture>
+                    <source class="hobbies__source" type="image" srcset="">
+                    <source class="" srcset="">
+                    <image></image>
+                </picture>
+            </div>
+        </div>
+        <div class="hobbies">
+            <div class="hobbies__item">
+                <p class="hobbies__title">Dessin</p>
+                <picture>
+                    <source class="hobbies__source" type="image" srcset="">
+                    <source class="" srcset="">
+                    <image></image>
+                </picture>
+            </div>
+        </div>
     </div>
+    <button class="prev_C" onclick="moveSlide(-1)">❮</button>
+    <button class="next_C" onclick="moveSlide(1)">❯</button>
 </section>
-<section id="banner" class="banners">
-    <h2 class="banners__title">Mes passe-temps</h2>
-    <div class="banners__container">
-        <picture class="banner-logo">
-            <source type="image" srcset="" class="banner-logo__source">
-            <img srcset="" src="img/images_de_test/hepl.png" alt="Logo école" width="128" height="128"
-                 class="banner-logo__img">
-        </picture>
-    </div>
-    <div class="banners__container">
-        <picture class="banner-logo">
-            <source type="image" srcset="" class="banner-logo__source">
-            <img srcset="" src="img/images_de_test/hepl.png" alt="Logo école" width="128" height="128"
-                 class="banner-logo__img">
-        </picture>
-    </div>
-    <div class="banners__container">
-        <picture class="banner-logo">
-            <source type="image" srcset="" class="banner-logo__source">
-            <img srcset="" src="img/images_de_test/hepl.png" alt="Logo école" width="128" height="128"
-                 class="banner-logo__img">
-        </picture>
+<section id="languages" class="languages">
+    <h2 class="languages__title">Langages que je maîtrise</h2>
+    <p class="languages__title_master">Langages appris à l'HEPL </p>
+    <p class="languages__title_description">Tous ces bannières représentent les langages de programmation que j'ai appris tout au long de ma formation de dévéloppeur full-stack.</p>
+    <div class="languages__container">
+        <div class="languages__item">
+            <p class="language__title">CSS</p>
+        </div>
+        <div class="languages__item">
+            <p class="language__title">JavaScript</p>
+        </div>
+        <div class="languages__item">
+            <p class="language__title">HTML</p>
+        </div>
+        <div class="languages__item">
+            <p class="language__title">TypeScript</p>
+        </div>
+        <div class="languages__item">
+            <p class="language__title">PHP</p>
+        </div>
     </div>
 </section>
 <section id="schools" class="schools">
@@ -388,34 +419,19 @@
             <div class="project__item">
                 <p class="project__title">Site client</p>
                 <p class="project__description">Le projet du SEF m'a permis de tester mes connaissances et mes
-                    compétences de programmeur pour un</p>
+                    compétences de programmeur pour un client externe</p>
+                <a href="" class="project__link">Voir le projet <span class="project__link-fleche">&gt;</span></a>
+            </div>
+        </div>
+        <div class="project">
+            <div class="project__item">
+                <p class="project__title">PFE</p>
+                <p class="project__description">Mon PFE m'a permis de tester mes connaissances et mes
+                    compétences de programmeur ainsi que mettre en place un projet personnel suivi.</p>
                 <a href="" class="project__link">Voir le projet <span class="project__link-fleche">&gt;</span></a>
             </div>
         </div>
     </div>
-</section>
-<section id="languages" class="languages">
-    <h2 class="languages__title">Langages que je maîtrise</h2>
-    <div class="languages__container">
-        <div class="languages__item">
-            <p class="language__title">CSS</p>
-        </div>
-        <div class="languages__item">
-            <p class="language__title">JavaScript</p>
-        </div>
-        <div class="languages__item">
-            <p class="language__title">HTML</p>
-        </div>
-        <div class="languages__item">
-            <p class="language__title">TypeScript</p>
-        </div>
-        <div class="languages__item">
-            <p class="language__title">PHP</p>
-        </div>
-    </div>
-    <p class="languages__title_master">Langage listé = langage maîtrisé</p>
-    <button class="prev_B" onclick="moveSlide(-1)">❮</button>
-    <button class="next_B" onclick="moveSlide(1)">❯</button>
 </section>
 <section id="reviews" class="reviews">
     <h2 class="reviews__title">Avis de mes amis et professeurs</h2>

@@ -23,27 +23,6 @@
   right: 0;
 }
 
-.prev_B,
-.next_B {
-  font-family: 'customfont', sans-serif;
-  position: absolute;
-  color: $color-blue;
-  top: 11em;
-  border: solid black 1px;
-  background-color: white;
-  font-size: 2em;
-  padding: 0.3em 0.6em;
-  cursor: pointer;
-  border-radius: 50px;
-}
-
-.prev_B {
-  left: 0.1em;
-}
-
-.next_B {
-  right: 0.1em;
-}
 .text__contact{
   &__btn {
     border-color: white;
@@ -60,4 +39,26 @@
     padding-left: 3em;
     padding-right: 3em;
   }
+}
+
+.prev_C,
+.next_C {
+  font-family: 'customfont', sans-serif;
+  position: absolute;
+  color: $color-blue;
+  top: 12em;
+  border: solid black 1px;
+  background-color: white;
+  font-size: 2em;
+  padding: 0.3em 0.6em;
+  cursor: pointer;
+  border-radius: 50px;
+}
+
+.prev_C {
+  left: 3em;
+}
+
+.next_C {
+  right: 4em;
 }
