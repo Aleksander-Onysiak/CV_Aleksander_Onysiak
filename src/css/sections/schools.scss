@@ -67,6 +67,8 @@
 
   &-card {
     &__container {
+      display: flex;
+      flex-direction: column;
       &-btn {
         font-family: 'customfont', sans-serif;
         font-size: 1.5em;
