@@ -11,15 +11,10 @@ btnBM.addEventListener('click', (event) => {
 */
 const articles = document.querySelectorAll(".organization");
 
-
 for (let i = 1; i < articles.length; i++) {
     articles[i].style.display = "none";
 }
-
-
 const buttons = document.querySelectorAll(".organizations__container button");
-
-
 buttons.forEach((button, index) => {
     button.addEventListener("click", () => {
         buttons.forEach((button)=>{
@@ -30,13 +25,10 @@ buttons.forEach((button, index) => {
     });
 });
 
-// Fonction pour afficher ou masquer un article en fonction de son index
 function toggleArticleDisplay(index) {
-    // Cachez tous les articles
     articles.forEach((article) => {
         article.style.display = "none";
     });
-    // Affichez l'article spécifié par son index
     articles[index].style.display = "block";
 }
 ///////
