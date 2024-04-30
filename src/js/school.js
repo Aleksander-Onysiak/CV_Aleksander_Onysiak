@@ -1,42 +1,38 @@
-/*const menu = document.getElementById("menu");
-const btnBM = document.getElementById('btnBM');
 
-btnBM.addEventListener('click', (event) => {
-    if (menu.classList.contains("hidden")) {
-        menu.classList.remove("hidden");
-    } else {
-        menu.classList.add("hidden");
-    }
-});
-*/
-const cards = document.querySelectorAll(".schools-cards");
+/*const buttons = document.querySelectorAll(".schools-card__container-btn");
 
+const cardContainers = document.querySelectorAll(".school");
 
-for (let i = 1; i < articles.length; i++) {
-    cards[i].style.display = "none";
-}
-
-
-const buttons = document.querySelectorAll(".schools-cards__container button");
-
-
-buttons.forEach((button, index) => {
+buttons.forEach((button) => {
     button.addEventListener("click", () => {
-        buttons.forEach((button)=>{
-            button.classList.remove('schools-cards__container-btn--active')
-        })
-        button.classList.add('schools-cards__container-btn--active')
-        toggleArticleDisplay(index);
+
+        cardContainers.forEach((container) => {
+            container.style.display = "none";
+        });
+
+        const buttonId = button.id;
+        const containerClass = buttonId.replace("_school", "_school_container");
+
+        const selectedContainer = document.getElementById(containerClass);
+        if (selectedContainer) {
+            selectedContainer.style.display = "block";
+        }
+    });
+});*/
+
+const buttons = document.querySelectorAll(".schools-card__container-btn");
+buttons.forEach((button) => {
+    button.addEventListener("click", () => {
+        const buttonId = button.id;
+        const containerId = buttonId + "_container";
+        const container = document.getElementById(containerId);
+        if (container) {
+            const allContainers = document.querySelectorAll(".school");
+            allContainers.forEach((item) => {
+                item.style.display = "none";
+            });
+            container.style.display = "block";
+        }
     });
 });
-
-// Fonction pour afficher ou masquer un article en fonction de son index
-function toggleArticleDisplay(index) {
-    // Cachez tous les articles
-    cards.forEach((card) => {
-        card.style.display = "none";
-    });
-    // Affichez l'article spécifié par son index
-    cards[index].style.display = "block";
-}
 

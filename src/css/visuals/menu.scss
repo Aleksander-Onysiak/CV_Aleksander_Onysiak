@@ -27,6 +27,11 @@
       font-weight: bold;
     }
   }
+  &_container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
 
   &__dropdown {
     &-item {

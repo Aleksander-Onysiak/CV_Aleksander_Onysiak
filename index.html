@@ -176,36 +176,36 @@
 </section>
 <section id="languages" class="languages">
     <h2 class="languages__title">Langages que je maîtrise</h2>
-    <p class="languages__title_master">Langages appris à l'HEPL </p>
+    <p class="languages__title_master">Compétences acquises tout au long de mon parcours à l'HEPL </p>
     <p class="languages__title_description">Tous ces bannières représentent les langages de programmation que j'ai appris tout au long de ma formation de dévéloppeur full-stack.</p>
     <div class="languages__container">
         <div class="languages__item">
-            <p class="language__title">CSS</p>
+            <p class="language__title_css">CSS</p>
         </div>
         <div class="languages__item">
-            <p class="language__title">JavaScript</p>
+            <p class="language__title_js">JavaScript</p>
         </div>
         <div class="languages__item">
-            <p class="language__title">HTML</p>
+            <p class="language__title_html">HTML</p>
         </div>
         <div class="languages__item">
-            <p class="language__title">TypeScript</p>
+            <p class="language__title_ts">TypeScript</p>
         </div>
         <div class="languages__item">
-            <p class="language__title">PHP</p>
+            <p class="language__title_php">PHP</p>
         </div>
     </div>
 </section>
 <section id="schools" class="schools">
     <h2 class="schools__title">Compétences acquises tout au long de mon parcours</h2>
+    <button id="iph_school" class="schools-card__container-btn">IPH Herve</button>
+    <button id="hech_school" class="schools-card__container-btn">HeCH</button>
+    <button id="helmo_school" class="schools-card__container-btn">HELMo</button>
+    <button id="hepl_school" class="schools-card__container-btn">HEPL</button>
     <div class="schools-card__container">
-        <button id="btn5" class="schools-card__container-btn">IPH Herve</button>
-        <button id="btn6" class="schools-card__container-btn">HeCH</button>
-        <button id="btn7" class="schools-card__container-btn">HELMo</button>
-        <button id="btn8" class="schools-card__container-btn">HEPL</button>
-        <div id="iph2" itemscope itemtype="https://schema.org/EducationalOrganization" class="school">
-            <article class="school-card card5">
-                <h3 class="school-card__title">Institut de la Providence à Herve</h3>
+        <div id="iph_school_container" itemscope itemtype="https://schema.org/EducationalOrganization" class="school" hidden>
+            <div class="school-card card_iph">
+                <span class="school-card__title">Institut de la Providence à Herve</span>
                 <ul class="school-card__list">
                     <li class="school-card__item">
                         <p class="school-card__item__content__formation">Auxiliaire Administratif et d'accueil</p>
@@ -217,11 +217,11 @@
                         <p class="school-card__item__content"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-lightbulb"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/></svg>Cette option m'a permise de découvrir un premier travail qui est celui d'un <strong>secrétaire</strong> et <strong>agent d'accueil</strong></p>
                     </li>
                 </ul>
-            </article>
+            </div>
         </div>
-        <div id="hech2" itemscope itemtype="https://schema.org/EducationalOrganization" class="school">
-            <article class="school-card card5">
-                <h3 class="school-card__title">Haute Ecole Charlemagne</h3>
+        <div id="hech_school_container" itemscope itemtype="https://schema.org/EducationalOrganization" class="school hidden">
+            <div class="school-card card_hech">
+                <span class="school-card__title">Haute Ecole Charlemagne</span>
                 <ul class="school-card__list">
                     <li class="school-card__item">
                         <p class="school-card__item__content__formation">Bachelier : Instituteur d'école primaire</p>
@@ -230,11 +230,11 @@
                         <p class="school-card__item__content"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-lightbulb"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/></svg>Cette école m'a permise de découvrir l'envers de l'école primaire dont les <strong>préparations</strong> pour pouvoir donner cours ainsi que tout l'aspect <strong>psychologique</strong> qui se cache derrière.</p>
                     </li>
                 </ul>
-            </article>
+            </div>
         </div>
-        <div id="helmo2" itemscope itemtype="https://schema.org/EducationalOrganization" class="school">
-            <article class="school-card card5">
-                <h3 class="school-card__title">Haute Ecole Libre Mosane</h3>
+        <div id="helmo_school_container" itemscope itemtype="https://schema.org/EducationalOrganization" class="schoo hiddenl">
+            <div class="school-card card_helmo">
+                <span class="school-card__title">Haute Ecole Libre Mosane</span>
                 <ul class="school-card__list">
                     <li class="school-card__item">
                         <p class="school-card__item__content__formation">Bachelier : Assistant de direction</p>
@@ -243,11 +243,11 @@
                         <p class="school-card__item__content"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-lightbulb"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/></svg>Cette école m'a permise d'<strong>approffondir</strong> les <strong>compétences</strong> acquises lors de ma formation en école secondaire.</p>
                     </li>
                 </ul>
-            </article>
+            </div>
         </div>
-        <div id="hepl2" itemscope itemtype="https://schema.org/EducationalOrganization" class="school">
-            <article class="school-card card5">
-                <h3 class="school-card__title">Haute Ecole de la Province de Liège</h3>
+        <div id="hepl_school_container" itemscope itemtype="https://schema.org/EducationalOrganization" class="school hidden">
+            <div class="school-card card_hepl">
+                <span class="school-card__title">Haute Ecole de la Province de Liège</span>
                 <ul class="school-card__list">
                     <li class="school-card__item">
                         <p class="school-card__item__content__formation">Bachelier : Infograhie </p>
@@ -259,7 +259,7 @@
                         <p class="school-card__item__content"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-lightbulb"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/></svg>Cette école m'a permise de découvrir le monde du web tel qu'il est réellment, que ce soit de manière <strong>technique</strong> que <strong>théorique</strong> dans les 3 domaines qui sont : la<strong> Modélisation/Animation 3D</strong>, le <strong>Design Graphique 2D</strong> ainsi que celui du <strong>Développmeent Web</strong> que j'ai choisi de poursuivre.</p>
                     </li>
                 </ul>
-            </article>
+            </div>
         </div>
     </div>
 </section>
@@ -303,23 +303,23 @@
         </div>
         <div id="hech" itemscope itemtype="https://schema.org/EducationalOrganization" class="organization">
             <div class="soft-skills-card card2">
+                <span>Ce que cette école m'a appris :</span>
                 <ul class="soft-skills-card__list">
-                    <span>Ce que cette école m'a appris :</span>
                     <li class="soft-skills-card__item">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
-                        <span class="soft-skills-card__content">Soft-skill2</span>
+                        <span class="soft-skills-card__content">Rechercher des informations fiables</span>
                     </li>
                     <li class="soft-skills-card__item">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
-                        <span class="soft-skills-card__content">Soft-skill</span>
+                        <span class="soft-skills-card__content">Retravailer une préparation de groupe pour pouvoir la présenter par une seule personne</span>
                     </li>
                     <li class="soft-skills-card__item">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
-                        <span class="soft-skills-card__content">Soft-skill</span>
+                        <span class="soft-skills-card__content">Garder la tête froide en situations compliquées</span>
                     </li>
                     <li class="soft-skills-card__item">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
-                        <span class="soft-skills-card__content">Soft-skill</span>
+                        <span class="soft-skills-card__content">Comprendre le raisonnement d'un enfant lors de la réalisation de ses exercices / travaux / péparations</span>
                     </li>
                     <li class="soft-skills-card__item">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
@@ -334,27 +334,27 @@
         </div>
         <div id="helmo" itemscope itemtype="https://schema.org/EducationalOrganization" class="organization">
             <div class="soft-skills-card card3">
+                <span>Ce que cette école m'a appris :</span>
                 <ul class="soft-skills-card__list">
-                    <span>Ce que cette école m'a appris :</span>
                     <li class="soft-skills-card__item">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
-                        <span class="soft-skills-card__content">Soft-skill3</span>
+                        <span class="soft-skills-card__content">Travailler en groupe et individuellement sur un même projet.</span>
                     </li>
                     <li class="soft-skills-card__item">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
-                        <span class="soft-skills-card__content">Soft-skill</span>
+                        <span class="soft-skills-card__content">Mettre en page des documents complexes</span>
                     </li>
                     <li class="soft-skills-card__item">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
-                        <span class="soft-skills-card__content">Soft-skill</span>
+                        <span class="soft-skills-card__content">Comprendre la base de la comptabilité</span>
                     </li>
                     <li class="soft-skills-card__item">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
-                        <span class="soft-skills-card__content">Soft-skill</span>
+                        <span class="soft-skills-card__content">Utiliser son langage corporel pour transmettre des émotions et s'exprimer avec aisance verbalement.</span>
                     </li>
                     <li class="soft-skills-card__item">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
-                        <span class="soft-skills-card__content">Soft-skill</span>
+                        <span class="soft-skills-card__content">Apprendre a base de la juridiction en entreprise.</span>
                     </li>
                 </ul>
                 <picture class="soft-skills-card__img">
@@ -365,23 +365,23 @@
         </div>
         <div id="hepl" itemscope itemtype="https://schema.org/EducationalOrganization" class="organization">
             <div class="soft-skills-card card4">
+                <span>Ce que cette école m'a appris :</span>
                 <ul class="soft-skills-card__list">
-                    <span>Ce que cette école m'a appris :</span>
                     <li class="soft-skills-card__item">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
-                        <span class="soft-skills-card__content">Soft-skill4</span>
+                        <span class="soft-skills-card__content">Créer un design pour une application mobile</span>
                     </li>
                     <li class="soft-skills-card__item">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
-                        <span class="soft-skills-card__content">Soft-skill</span>
+                        <span class="soft-skills-card__content">Créer un design pour un client extérieur et développer le site</span>
                     </li>
                     <li class="soft-skills-card__item">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
-                        <span class="soft-skills-card__content">Soft-skill</span>
+                        <span class="soft-skills-card__content">Créer des sites respectant les normes du web apprises tout au long de la formation</span>
                     </li>
                     <li class="soft-skills-card__item">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
-                        <span class="soft-skills-card__content">Soft-skill</span>
+                        <span class="soft-skills-card__content">Développer un jeu mobile en TypeScript</span>
                     </li>
                     <li class="soft-skills-card__item">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
@@ -612,7 +612,9 @@
         </div>
     </section>
 </footer>
+<script src="src/js/infinite.js"></script>
+<script src="src/js/hobbies.js"></script>
 <script src="src/js/main.js"></script>
-<script src="path-to-the-file/splide.min.js"></script>
+<script src="src/js/school.js"></script>
 </body>
 </html>
