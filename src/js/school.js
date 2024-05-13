@@ -1,38 +1,24 @@
+const schoolContainers = document.querySelectorAll(".school");
 
-/*const buttons = document.querySelectorAll(".schools-card__container-btn");
-
-const cardContainers = document.querySelectorAll(".school");
-
-buttons.forEach((button) => {
-    button.addEventListener("click", () => {
-
-        cardContainers.forEach((container) => {
-            container.style.display = "none";
-        });
-
-        const buttonId = button.id;
-        const containerClass = buttonId.replace("_school", "_school_container");
-
-        const selectedContainer = document.getElementById(containerClass);
-        if (selectedContainer) {
-            selectedContainer.style.display = "block";
-        }
-    });
-});*/
+for (let i = 1; i < schoolContainers.length; i++) {
+    schoolContainers[i].classList.add("hidden");
+}
 
 const buttons = document.querySelectorAll(".schools-card__container-btn");
-buttons.forEach((button) => {
+
+buttons.forEach((button, index) => {
     button.addEventListener("click", () => {
-        const buttonId = button.id;
-        const containerId = buttonId + "_container";
-        const container = document.getElementById(containerId);
-        if (container) {
-            const allContainers = document.querySelectorAll(".school");
-            allContainers.forEach((item) => {
-                item.style.display = "none";
-            });
-            container.style.display = "block";
-        }
+        buttons.forEach((button)=>{
+            button.classList.remove('schools-card__container-btn--active');
+        });
+        button.classList.add('schools-card__container-btn--active');
+        toggleSchoolDisplay(index);
     });
 });
 
+function toggleSchoolDisplay(index) {
+    schoolContainers.forEach((container) => {
+        container.classList.add("hidden");
+    });
+    schoolContainers[index].classList.remove("hidden");
+}

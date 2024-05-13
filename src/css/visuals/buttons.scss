@@ -1,52 +1,79 @@
 @import "colors";
 @import "../visuals/fonts.scss";
-
-.prev,
-.next {
-  font-family: 'customfont', sans-serif;
-  position: absolute;
-  text-decoration: none;
-  top: 10em;
-  padding: 10px;
-  border: black 1px;
-  background-color: transparent;
-  font-size: 20px;
-  cursor: pointer;
-  border-radius: 50px;
+#recherche{
+  margin-top: 0.1em;
 }
-
-.prev {
-  left: 0;
+#btnINF{
+  padding: 0.8em;
 }
-
-.next {
-  right: 0;
-}
-
-.text__contact{
-  &__btn {
-    border-color: white;
-    font-size: 0.8em;
-    font-weight: bolder;
-    color: white;
-    min-height: 3em;
-    min-width: 3em;
-    background-color: $color-blue;
-    border-radius: 25px;
-    margin-left: auto;
-    margin-top: 1em;
-    margin-bottom:1em;
-    padding-left: 3em;
-    padding-right: 3em;
+  .prev,
+  .next {
+    font-family: 'customfont', sans-serif;
+    position: absolute;
+    text-decoration: none;
+    top: 10em;
+    padding: 10px;
+    border: black 1px;
+    background-color: transparent;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 50px;
   }
-}
 
-.prev_C,
-.next_C {
+  .prev {
+    left: 0;
+  }
+
+  .next {
+    right: 0;
+  }
+
+  .text__contact{
+    &__btn {
+      border-color: white;
+      font-size: 0.8em;
+      font-weight: bolder;
+      color: white;
+      min-height: 3em;
+      min-width: 3em;
+      background-color: $color-blue;
+      border-radius: 25px;
+      margin-left: auto;
+      margin-top: 1em;
+      margin-bottom:1em;
+      padding-left: 3em;
+      padding-right: 3em;
+    }
+  }
+
+  .prev_C,
+  .next_C {
+    font-family: 'customfont', sans-serif;
+    position: absolute;
+    color: $color-blue;
+    top: 12em;
+    border: solid black 1px;
+    background-color: white;
+    font-size: 2em;
+    padding: 0.3em 0.6em;
+    cursor: pointer;
+    border-radius: 50px;
+    z-index: 1;
+  }
+
+  .prev_C {
+    left: 3em;
+  }
+
+  .next_C {
+    right: 4em;
+  }
+.prev_P,
+.next_P {
   font-family: 'customfont', sans-serif;
   position: absolute;
   color: $color-blue;
-  top: 12em;
+  bottom: 2em;
   border: solid black 1px;
   background-color: white;
   font-size: 2em;
@@ -56,10 +83,10 @@
   z-index: 1;
 }
 
-.prev_C {
+.prev_P {
   left: 3em;
 }
 
-.next_C {
+.next_P {
   right: 4em;
 }

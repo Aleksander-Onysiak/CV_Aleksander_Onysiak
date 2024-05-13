@@ -46,3 +46,22 @@ btnBM.addEventListener('click', (event) => {
     }
 });
 */
+document.addEventListener('DOMContentLoaded', function() {
+    const burgerBtn = document.getElementById('burger-btn');
+    const menu = document.getElementById('menu');
+    const menuItems = document.querySelectorAll('.menu__item');
+
+    burgerBtn.addEventListener('click', function() {
+        menu.classList.toggle('active');
+    });
+
+    menuItems.forEach(function(item) {
+        item.addEventListener('click', function() {
+            this.classList.toggle('active');
+            const dropdown = this.querySelector('.menu__dropdown');
+            if (dropdown) {
+                dropdown.classList.toggle('active');
+            }
+        });
+    });
+});

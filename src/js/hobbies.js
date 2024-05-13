@@ -27,10 +27,28 @@ document.addEventListener("DOMContentLoaded", function() {
             slideIndex = slides.length - 1;
         }
 
-        slides.forEach((slide) => {
-            slide.style.display = 'none';
-        });
-
-        slides[slideIndex].style.display = 'block';
+        if (window.innerWidth > 1116) {
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = 'none';
+            }
+            for (let i = slideIndex; i < slideIndex + 3; i++) {
+                slides[i % slides.length].style.display = 'block';
+            }
+        } else if (window.innerWidth > 679 && window.innerWidth <= 1114) {
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = 'none';
+            }
+            for (let i = slideIndex; i < slideIndex + 2; i++) {
+                slides[i % slides.length].style.display = 'block';
+            }
+        } else {
+            slides.forEach((slide) => {
+                slide.style.display = 'none';
+            });
+            slides[slideIndex].style.display = 'block';
+        }
     }
+    window.addEventListener('resize', function() {
+        showSlides(slideIndex);
+    });
 });

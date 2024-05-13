@@ -43,6 +43,60 @@
         text-decoration: none;
       }
     }
+    &:checked{
+      display: block;
+      padding: 2em;
+    }
   }
 
+}
+/* Ajoutez vos styles CSS pour le burger menu ici */
+
+/* Styles pour le burger menu */
+.burger-btn {
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30px;
+  height: 30px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  position: relative;
+  z-index: 1000;
+}
+
+.burger-btn__line {
+  width: 100%;
+  height: 2px;
+  background: #000;
+  transition: all 0.3s ease;
+}
+
+.menu__container {
+  display: flex;
+}
+
+.menu__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu__item {
+  position: relative;
+  cursor: pointer;
+}
+
+.menu__dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 100;
+}
+
+.menu__item.active .menu__dropdown {
+  display: block;
 }

@@ -49,12 +49,15 @@
   color: $color-purple;
 }
 
+svg{
+  stroke-width: 3;
+}
 lucide {
   &-circle {
 
   }
 
-  &-checked {
+  &-check {
 
   }
 }
